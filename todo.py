@@ -47,13 +47,13 @@ while tsk != "exit":
     # function 1
     if tsk == "today":
         day = str(datetime.date.today())
-        if not todo[day]:
-            print("No tasks for today :)")
-        else:
+        if day in todo:
             print("Here is the list of tasks for today: ")
             for task in todo[day]:
                 print(" - {0}".format(task))
-        tsk = input("How else I can help? ")
+        else:
+            print("No tasks for today :)")
+            tsk = input("How else I can help? ")
 
     # function 2
     elif tsk == 'date':
