@@ -47,7 +47,7 @@ while tsk != "exit":
     # function 1
     if tsk == "today":
         day = str(datetime.date.today())
-        if day in todo:
+        if day in todo and todo[day] != []:
             print("Here is the list of tasks for today: ")
             for task in todo[day]:
                 print(" - {0}".format(task))
