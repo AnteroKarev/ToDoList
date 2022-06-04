@@ -53,7 +53,7 @@ while tsk != "exit":
                 print(" - {0}".format(task))
         else:
             print("No tasks for today :)")
-            tsk = input("How else I can help? ")
+        tsk = input("How else I can help? ")
 
     # function 2
     elif tsk == 'date':
